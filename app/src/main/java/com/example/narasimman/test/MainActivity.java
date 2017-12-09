@@ -70,6 +70,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
         super.onSaveInstanceState(outState, outPersistentState);
-        Log.d("dinesh","adding extra codes");
+        Log.d("dinesh","adding extra codes in Mainactivity");
     }
 }
