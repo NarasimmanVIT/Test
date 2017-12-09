@@ -1,6 +1,7 @@
 
 package com.example.narasimman.test;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -65,4 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 });
         requestQueue.add(jsonObjectRequest);
   }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        super.onSaveInstanceState(outState, outPersistentState);
+        Log.d("dinesh","adding extra codes");
+    }
 }
